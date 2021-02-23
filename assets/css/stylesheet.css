@@ -1,0 +1,10 @@
+html {
+    background-color: none;
+}
+
+.pic {
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+}
