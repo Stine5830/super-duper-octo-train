@@ -1,28 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Javascript workshop</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
 </head>
+
 <body>
 
-    <div class="pic">
- 
+    <!-- https://tutorialzine.com/2017/02/freebie-4-bootstrap-galleries -->
+
+    <div class="container gallery-container">
+
+        <h1>Cat Gallery</h1>
+
+        <p class="page-description text-center">Look at sexy cats ;-)</p>
+
+        <!-- https://www.w3schools.com/html/html5_audio.asp -->
+
+        <audio controls autoplay>
+            <source src="assets/Sounds/music.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+
+        <div class="tz-gallery">
+
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <a class="lightbox" href="assets/images/images.jpg">
+                        <img src="assets/images/images.jpg" alt="Toast">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <a class="lightbox" href="assets/images/images1.jpg">
+                        <img src="assets/images/images1.jpg" alt="Wild">
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <a class="lightbox" href="assets/images/images2.png">
+                        <img src="assets/images/images2.png" alt="Happy Feet">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <a class="lightbox" href="assets/images/images3.png">
+                        <img src="assets/images/images3.png" alt="Sexy">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <a class="lightbox" href="assets/images/images4.png">
+                        <img src="assets/images/images4.png" alt="Turtle">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <a class="lightbox" href="assets/images/images5.png">
+                        <img src="assets/images/images5.png" alt="Standing">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <a class="lightbox" href="assets/images/images6.png">
+                        <img src="assets/images/images6.png" alt="Tiny Nose">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <a class="lightbox" href="assets/images/images7.jpg">
+                        <img src="assets/images/images7.jpg" alt="Soft">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <a class="lightbox" href="assets/images/images8.png">
+                        <img src="assets/images/images8.png" alt="Chucky">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
     </div>
-    <div class="pic"></div>
-    <div class="pic"></div>
-
-    <div class="pic"></div>
-    <div class="pic"></div>
-    <div class="pic"></div>
-
-    <div class="pic"></div>
-    <div class="pic"></div>
-    <div class="pic"></div>
-
-    
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
 </body>
+
 </html>
